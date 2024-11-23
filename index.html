@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Luxury Hotel</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#booking">Book a Room</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="background-home">
+        <h1>Welcome to Luxury Hotel</h1>
+        <p><i>Experience luxury and comfort at its finest. Book your stay with us today!</i></p>
+    </section>
+    <section id="rooms" class="background-rooms">
+        <h2>Our Rooms</h2>
+        <b>
+        <div class="room-card">
+            <h3>Deluxe Room</h3>
+            <p><strong>Spacious room with a king-size bed, sea view, and luxurious amenities.</strong></p>
+            <p><strong>Price: $150 per night</strong></p>
+        </div>
+    </b>
+    <b>
+        <div class="room-card">
+            <h3>Executive Suite</h3>
+            <p><strong>A large suite with separate living area, premium services, and a panoramic view.</strong></p>
+            <p><strong>Price: $300 per night</strong></p>
+        </div>
+    </b>
+    <b>
+        <div class="room-card">
+            <h3>Presidential Suite</h3>
+            <p><strong>Ultimate luxury with private balcony, butler service, and world-class facilities.</strong></p>
+            <p><strong>Price: $500 per night</strong></p>
+        </div>
+    </b>
+    </section>
+    <section id="booking" class="background-booking">
+        <h2>Book a Room</h2>
+        <form action="submit_booking.html" method="post">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin"><b>Check-in Date:</b></label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout"><b>Check-out Date:</b></label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="room-type"><b>Room Type:</b></label>
+            <select id="room-type" name="room-type" required>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="executive">Executive Suite</option>
+                <option value="presidential">Presidential Suite</option>
+            </select>
+
+            <label for="guests"><b>Number of Guests:</b></label>
+            <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+    <section id="contact" class="background-contact">
+        <h2>Contact Us</h2>
+        <p><t>If you have any questions, feel free to contact us at </t><a href="mailto:info@luxuryhotel.com">info@luxuryhotel.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Luxury Hotel | <a href="#home">Back to Top</a></p>
+    </footer>
+</body>
+</html>
+
